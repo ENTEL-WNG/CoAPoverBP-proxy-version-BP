@@ -1,0 +1,48 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+syntax = "proto3";
+
+enum StorageOperation {
+    // Invalid.
+    STORAGE_OPERATION_UNSPECIFIED = 0;
+
+    // List all bundles matching the given filter.
+    STORAGE_OPERATION_LIST_BUNDLES = 1;
+
+    // Delete all bundles matching the given filter.
+    STORAGE_OPERATION_DELETE_BUNDLES = 2;
+
+    // Push all bundles matching the given filter to the BPA ("receive" them).
+    STORAGE_OPERATION_PUSH_BUNDLES = 3;
+
+    // NOTE: FUTURE EXTENSION: PUSH_AND_DELETE
+    // NOTE: FUTURE EXTENSION: UPDATE (e.g., for fragmentation)
+}
+
+message CompoundBundleId {
+    string source_eid = 1;
+    uint64 creation_timestamp = 3;
+    uint64 sequence_number = 4;
+    uint64 fragment_offset = 5;
+    uint64 payload_length = 6;
+}
+
+message BundleMetadataFilter {   
+    // An EID pattern to match a set of bundles. May contain '*' as a placeholder (similar to POSIX-style glob patterns).
+    optional string eid_glob = 1;
+
+    //optional uint32 limit = 2;
+    //optional bool random = 3;
+    
+    // NOTE: FUTURE EXTENSION: Arbitrary filters on all bundle metadata, potentially
+    // using regular expressions or glob patterns.
+}
+
+message StorageCall {
+    StorageOperation operation = 1;
+    oneof bundle_filter {
+        CompoundBundleId id = 2;
+        //string uuid = 3;
+        BundleMetadataFilter metadata = 4;
+    };
+}

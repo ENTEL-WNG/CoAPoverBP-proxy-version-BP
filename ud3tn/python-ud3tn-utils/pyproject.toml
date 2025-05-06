@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools >= 62.5"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ud3tn-utils"
+version = "0.14.2"
+description = "μD3TN Utilities"
+readme = "README.md"
+license = { text = "AGPL-3.0-only" }
+authors = [
+  {name = "D3TN GmbH", email = "contact@d3tn.com"},
+]
+requires-python = ">=3.8"
+dynamic = ["dependencies"]
+
+[project.urls]
+Repository = "https://gitlab.com/d3tn/ud3tn"
+
+[project.scripts]
+aap-config = "ud3tn_utils.aap.bin.aap_config:main"
+aap-contact-plan-reader = "ud3tn_utils.aap.bin.aap_contact_plan_reader:main"
+aap-echo = "ud3tn_utils.aap.bin.aap_echo:main"
+aap-ping = "ud3tn_utils.aap.bin.aap_ping:main"
+aap-receive = "ud3tn_utils.aap.bin.aap_receive:main"
+aap-send-and-receive = "ud3tn_utils.aap.bin.aap_send_and_receive:main"
+aap-send = "ud3tn_utils.aap.bin.aap_send:main"
+aap-storage-agent = "ud3tn_utils.aap.bin.aap_storage_agent:main"
+
+aap2-bdm-static = "ud3tn_utils.aap2.bin.aap2_bdm_static:main"
+aap2-bdm-ud3tn-routing = "ud3tn_utils.aap2.bin.aap2_bdm_ud3tn_routing:main"
+aap2-config = "ud3tn_utils.aap2.bin.aap2_config:main"
+aap2-configure-link = "ud3tn_utils.aap2.bin.aap2_configure_link:main"
+aap2-ping = "ud3tn_utils.aap2.bin.aap2_ping:main"
+aap2-receive = "ud3tn_utils.aap2.bin.aap2_receive:main"
+aap2-send = "ud3tn_utils.aap2.bin.aap2_send:main"
+aap2-storage-agent = "ud3tn_utils.aap2.bin.aap2_storage_agent:main"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }

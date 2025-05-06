@@ -1,0 +1,5 @@
+## begin bibeadmin
+# NOTE: ione uses the old syntax as of 2024-07-24:
+# a bcla dtn://lower2.dtn 20 20 300 2 128
+a bcla dtn://lower2.dtn 20 20 dtn:none 0 300 2 128 0
+## end bibeadmin

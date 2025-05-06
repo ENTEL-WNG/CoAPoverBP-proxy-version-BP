@@ -1,0 +1,8 @@
+.md-nav--primary > label.md-nav__title {
+    color: dodgerblue;
+    font-size: large;
+}
+
+.md-nav__item--section > label.md-nav__link {
+    color: dodgerblue !important;
+}

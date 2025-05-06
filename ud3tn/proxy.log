@@ -1,0 +1,122 @@
+2025-05-06 18:31:53,406 - NodeDProxy - INFO - Proxy configured for individual message forwarding (no aggregation)
+2025-05-06 18:31:53,408 - NodeDProxy - INFO - All AAP2 clients configured successfully
+2025-05-06 18:32:18,669 - NodeDProxy - INFO - Forward from A to B task ended
+2025-05-06 18:32:18,669 - NodeDProxy - INFO - Forward from B to A task ended
+2025-05-06 18:32:18,670 - NodeDProxy - INFO - Proxy shutting down...
+2025-05-06 18:32:40,074 - NodeDProxy - INFO - Proxy configured for individual message forwarding (no aggregation)
+2025-05-06 18:32:40,075 - NodeDProxy - INFO - All AAP2 clients configured successfully
+2025-05-06 18:33:40,050 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:34:28,018 - NodeDProxy - INFO - Forward from A to B task ended
+2025-05-06 18:34:28,019 - NodeDProxy - INFO - Forward from B to A task ended
+2025-05-06 18:34:28,020 - NodeDProxy - INFO - Proxy shutting down...
+2025-05-06 18:34:31,754 - NodeDProxy - INFO - Proxy configured for individual message forwarding (no aggregation)
+2025-05-06 18:34:31,756 - NodeDProxy - INFO - All AAP2 clients configured successfully
+2025-05-06 18:35:31,757 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:36:31,759 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:37:31,762 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:38:31,764 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:38:45,554 - NodeDProxy - INFO - Forward from A to B task ended
+2025-05-06 18:38:45,555 - NodeDProxy - INFO - Forward from B to A task ended
+2025-05-06 18:38:45,556 - NodeDProxy - INFO - Proxy shutting down...
+2025-05-06 18:38:48,771 - NodeDProxy - INFO - Proxy configured for individual message forwarding (no aggregation)
+2025-05-06 18:38:48,772 - NodeDProxy - INFO - AAP2 clients configured successfully
+2025-05-06 18:39:05,091 - NodeDProxy - INFO - Received ADU from dtn://a.dtn/snd: 37 bytes
+2025-05-06 18:39:05,091 - NodeDProxy - INFO - From A: Decoded CoAP request: MID=1, Token=c7b1, Code=PUT
+2025-05-06 18:39:05,091 - NodeDProxy - INFO - [A->B] Mapped request: orig_token=c7b1 -> proxy_token=2580cfb5, orig_mid=1 -> proxy_mid=628
+2025-05-06 18:39:05,091 - NodeDProxy - INFO - Sent individual CoAP message to dtn://b.dtn/rec
+2025-05-06 18:39:05,093 - NodeDProxy - INFO - Received ADU from dtn://b.dtn/snd: 25 bytes
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Option ended prematurely
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:39:05,093 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:39:05,094 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:39:05,094 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:39:05,094 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:39:05,094 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:39:05,094 - NodeDProxy - ERROR - Error processing CoAP message: index out of range
+2025-05-06 18:39:48,773 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:40:17,575 - NodeDProxy - INFO - Message processing task ended
+2025-05-06 18:40:17,576 - NodeDProxy - INFO - Proxy shutting down...
+2025-05-06 18:40:20,999 - NodeDProxy - INFO - Proxy configured for individual message forwarding (no aggregation)
+2025-05-06 18:40:21,000 - NodeDProxy - INFO - AAP2 clients configured successfully
+2025-05-06 18:40:34,923 - NodeDProxy - INFO - Received ADU from dtn://a.dtn/snd: 27 bytes
+2025-05-06 18:40:34,923 - NodeDProxy - INFO - From A: Decoded CoAP request: MID=1, Token=7721, Code=POST
+2025-05-06 18:40:34,923 - NodeDProxy - INFO - [A->B] Mapped request: orig_token=7721 -> proxy_token=9728, orig_mid=1 -> proxy_mid=69
+2025-05-06 18:40:34,923 - NodeDProxy - INFO - Sent individual CoAP message to dtn://b.dtn/rec
+2025-05-06 18:40:34,924 - NodeDProxy - INFO - Received ADU from dtn://b.dtn/snd: 32 bytes
+2025-05-06 18:40:34,924 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:40:34,924 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option ended prematurely
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option ended prematurely
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option ended prematurely
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option ended prematurely
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option announced but absent
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Option ended prematurely
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Fatal Error: Protocol Version must be 1
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:40:34,925 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:40:34,926 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:40:34,926 - NodeDProxy - ERROR - Error processing CoAP message: Missing Payload-Length option in incoming CoAP message
+2025-05-06 18:40:34,926 - NodeDProxy - ERROR - Error processing CoAP message: index out of range
+2025-05-06 18:41:21,001 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:42:21,004 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:43:21,005 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:44:21,007 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:45:21,009 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:46:21,012 - NodeDProxy - INFO - [A->B] Cleaned up stale mapping for token: 9728
+2025-05-06 18:46:21,013 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:46:56,780 - NodeDProxy - INFO - Message processing task ended
+2025-05-06 18:46:56,781 - NodeDProxy - INFO - Proxy shutting down...
+2025-05-06 18:48:32,692 - NodeDProxy - INFO - Proxy configured for individual message forwarding (no aggregation)
+2025-05-06 18:48:32,694 - NodeDProxy - INFO - AAP2 clients configured successfully
+2025-05-06 18:48:57,480 - NodeDProxy - INFO - Message processing task ended
+2025-05-06 18:48:57,481 - NodeDProxy - INFO - Proxy shutting down...
+2025-05-06 18:49:19,132 - NodeDProxy - INFO - Proxy configured for individual message forwarding (no aggregation)
+2025-05-06 18:49:19,133 - NodeDProxy - INFO - AAP2 clients configured successfully
+2025-05-06 18:49:42,005 - NodeDProxy - INFO - Received ADU from dtn://a.dtn/snd: 27 bytes
+2025-05-06 18:49:42,006 - NodeDProxy - INFO - From A: Decoded CoAP request: MID=1, Token=02d9, Code=POST
+2025-05-06 18:49:42,006 - NodeDProxy - INFO - [A->B] Mapped request: orig_token=02d9 -> proxy_token=c753, orig_mid=1 -> proxy_mid=753
+2025-05-06 18:49:42,006 - NodeDProxy - INFO - Sent individual CoAP message to dtn://b.dtn/rec
+2025-05-06 18:49:42,007 - NodeDProxy - INFO - Received ADU from dtn://b.dtn/snd: 36 bytes
+2025-05-06 18:49:42,007 - NodeDProxy - INFO - From B: Decoded CoAP response: MID=753, Token=c753, Code=4.00 Bad Request
+2025-05-06 18:49:42,007 - NodeDProxy - INFO - [A->B] Mapped response: proxy_token=c753 -> orig_token=02d9, proxy_mid=753 -> orig_mid=1
+2025-05-06 18:49:42,007 - NodeDProxy - INFO - Sent individual CoAP message to dtn://a.dtn/snd
+2025-05-06 18:50:19,134 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:51:19,136 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:52:19,120 - NodeDProxy - INFO - Performed cleanup of stale mappings
+2025-05-06 18:52:45,321 - NodeDProxy - INFO - Message processing task ended
+2025-05-06 18:52:45,321 - NodeDProxy - INFO - Proxy shutting down...

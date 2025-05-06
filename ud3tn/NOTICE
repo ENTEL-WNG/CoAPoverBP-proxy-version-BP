@@ -1,0 +1,8 @@
+Copyright (C) 2024 µD3TN team and D3TN GmbH (contact: contact@d3tn.com).
+
+This work is licensed as a whole under the GNU Affero General Public License
+v3.0 (see LICENSE). Some parts and components have individual, compatible,
+licenses. Specifically, components of µD3TN that have not received significant
+changes since v0.13.0 are dual-licensed under the BSD 3-Clause and Apache 2.0
+licenses and external libraries shipped with µD3TN are subject to the licenses
+documented in external/LICENSE-3RD-PARTY.txt.

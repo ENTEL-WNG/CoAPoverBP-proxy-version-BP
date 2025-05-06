@@ -1,0 +1,173 @@
+site_name: μD3TN
+site_url: https://d3tn.gitlab.io/ud3tn/
+repo_url: https://gitlab.com/d3tn/ud3tn/
+repo_name: μD3TN
+site_author: D3TN GmbH
+copyright: Copyright &copy; D3TN GmbH
+docs_dir: doc
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - footnotes
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - toc:
+      permalink: '#'
+
+theme:
+  name: material
+  logo: 'image-material/logo.png'
+  favicon: 'image-material/logo.png'
+  features:
+    - content.code.copy
+    # - navigation.tabs
+    - navigation.expand
+    - navigation.path
+    - navigation.sections
+    - search.highlight
+    - search.suggest
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: "indigo"
+      accent: "orange"
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: "indigo"
+      accent: "orange"
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    font: true
+
+nav:
+  - Home: 'index.md'
+  # - About µD3TN:
+  #   - Core Features:
+  #   - Feature Comparison:
+  #   - Supported Platforms:
+
+  - Getting Started:
+    - Quick Start Guide: 'posix_quick_start_guide.md'
+    - Architecture Overview: 'architecture-overview.md'
+
+  # - Core Concepts:
+    # - Key Terminology:
+    # - Modular Forwarding Mechanisms:
+    #   - Contact-Based Forwarding:
+    #   - Static Forwarding:
+    #   - Guidelines for Adding Forwarding Techniques:
+
+  - Usage:
+    # - Installing Dependencies by Platform:
+    # - Cloning from Git with Submodules:
+    - Build and Run µD3TN: 'usage/build-and-run.md'
+    - Python Virtual Environment Setup: 'python-venv.md'
+    # - Running with Basic Configuration
+    # - Configuration Guide:
+    #   - Compile-Time Configuration Options:
+    #   - Runtime Configuration Options:
+    #   - Command-Line Arguments:
+    #   - Configuring Convergence Layer Adapters (CLAs):
+    #   - Link and FIB Configuration:
+    #   - Contact Configuration:
+    # - Sending and Receiving Bundles:
+    #     - Endpoint Registration Process:
+    #     - Reserved Endpoints:
+    #     - Configuring AAP 2.0 Security:
+    #     - Useful Tools:
+    - Available Tools:
+      - Contact Plan Reader: 'tools/readme_contact_plan_reader.md'
+      - Data Decoder Tool: 'usage/decoder.md'
+    - Storage Management: 'sqlite-storage.md'
+    - Bundle-in-Bundle Encapsulation (BIBE): 'Bundle-in-Bundle Encapsulation_(BIBE).md'
+
+  - Development:
+    - AAP: 'ud3tn_aap.md'
+    - AAP 2.0:
+      - Overview: 'aap20.md'
+      - Building a Client: 'development/how-to-build-an-aap20-client-in-python.md'
+      # - AAP API:
+      # - Bundle Dispatcher Module (BDM):
+    # - Configuring an IDE for µD3TN:
+    # - API Guide:
+    #     - Simple AAP 2.0 Send/Receive Example:
+    #     - CLA Interface and Implementation Guide:
+    - Contact Data Format: 'contacts_data_format.md'
+    - Testing Guide: 'testing.md'
+    - pyd3tn: 'development/pyd3tn.md'
+    - python-ud3tn-utils: 'development/python_ud3tn_utils.md'
+    - Advanced Performance Profiling With Perf: 'perf_events.md'
+    # - Debugging Techniques:
+    - Contributing to µD3TN: 'development/contributing.md'
+
+  # - Troubleshooting Guide:
+
+  - References:
+    - python-ud3tn-utils API Reference: 'references/ud3tn-utils.md'
+    - pyd3tn API Reference: 'references/pyd3tn.md'
+    - Protobuf: 'references/protobuf/index.md'
+    # - Configurations:
+    # - Manpages:
+    - Research Papers: 'references/papers.md'
+    # - Projects:
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [ python-ud3tn-utils, pyd3tn ]
+          options:
+            inherited_members: true
+            merge_init_into_class: true
+            show_root_heading: true
+            #show_source: false
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+  # - mkdoxy:
+  #     projects:
+  #       doxygen-ud3tn:
+  #         src-dirs: components include
+  #         full-doc: True
+          # IDK, but it looks like these options are not being applied...
+          #doxy-cfg:
+          #  SOURCE_BROWSER: False
+          #  INLINE_SOURCES: False
+          #  VERBATIM_HEADERS: False
+          #  SHOW_USED_FILES: False
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  #anchors: warn # available >v1.6.0
+  nav:
+    omitted_files: info
+
+extra:
+  social:
+    - icon: material/web
+      link: https://d3tn.com/ud3tn.html
+    - icon: simple/youtube
+      link: https://www.youtube.com/@d3tn
+    - icon: simple/linkedin
+      link: https://www.linkedin.com/company/d3tn/
+
+extra_css:
+  - css/custom.css
+
+exclude_docs: |
+  # README in doc/ for building the documentation, not relevant in doc site itself.
+  README.md
+  # protoc-gen-doc markdown template, not relevant in doc site itself.
+  references/protobuf/protoc-gen-doc-markdown.tmpl

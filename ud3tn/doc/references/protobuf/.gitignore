@@ -1,0 +1,2 @@
+# Ignore auto generated markdown files from protoc-gen-doc
+*.md

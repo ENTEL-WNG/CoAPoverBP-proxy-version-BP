@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Nanopb options for sqlite_agent.proto
+
+BundleMetadataFilter.eid_glob       type:FT_POINTER
+CompoundBundleId.source_eid         type:FT_POINTER
