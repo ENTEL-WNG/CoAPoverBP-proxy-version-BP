@@ -80,6 +80,7 @@ The Topology can be sen in Topology.png
 ## AUTHORS
 
 - Michael Karpov <michael.karpov@estudiantat.upc.edu> — Initial author and main developer
+- Anna Calveras Supervisor
 
 ## FUNDING
 
