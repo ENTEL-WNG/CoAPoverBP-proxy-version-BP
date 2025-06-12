@@ -1,3 +1,11 @@
+## PROJECT DESCRIPTION
+ 
+This scenario demonstrates a CoAP-over-BP proxy architecture where both CoAP client and server operate directly on DTN nodes and a dedicated proxy mediates CoAP over the Bundle Protocol. The proxy performs forwarding of CoAP messages with hop-by-hop based Message ID and Tokens matching. CoAP messages are buffered, optionally aggregated and then encapsulated in BP bundles. Persistent storage and scheduled contact plans manage delayed delivery. 
+
+## TOPOLOGY
+
+The Topology can be sen in Topology.png
+
 ## RUNNING THE PROJECT FOR THE FIRST TIME
 
 ```bash
@@ -73,14 +81,10 @@ sqlite3 ud3tn-c.sqlite \
 aap2-storage-agent --socket ud3tn-c.aap2.socket --storage-agent-eid "dtn://c.dtn/sqlite" push --dest-eid-glob "*"
 ```
 
-## TOPOLOGY
-
-The Topology can be sen in Topology.png
-
 ## AUTHORS
 
 - Michael Karpov <michael.karpov@estudiantat.upc.edu> — Initial author and main developer
-- Anna Calveras Supervisor
+- Anna Calveras <anna.calveras@upc.edu> — Project supervisor
 
 ## FUNDING
 
