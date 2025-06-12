@@ -1,6 +1,6 @@
 ## PROJECT DESCRIPTION
  
-This scenario demonstrates a CoAP-over-BP proxy architecture where both CoAP client and server operate directly on DTN nodes and a dedicated proxy mediates CoAP over the Bundle Protocol. The proxy performs forwarding of CoAP messages with hop-by-hop based Message ID and Tokens matching. CoAP messages are buffered, optionally aggregated and then encapsulated in BP bundles. Persistent storage and scheduled contact plans manage delayed delivery. 
+This scenario demonstrates a CoAP-over-BP proxy architecture where both CoAP client and server operate directly on DTN nodes and a dedicated proxy mediates CoAP over the Bundle Protocol. The proxy performs forwarding of CoAP messages with hop-by-hop based Message ID and Tokens matching. CoAP messages are buffered and optionally aggregated, with each message tagged using a custom PAYLOAD_LENGTH option to allow for accurate extraction on the receiving side. All forwarding, storage and delay simulation is managed using µD3TN with persistent storage and scheduled contacts between nodes.
 
 ## TOPOLOGY
 
